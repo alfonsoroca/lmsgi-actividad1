@@ -1,25 +1,97 @@
-/*
-CSS
-*/
-/*Eliminamos los margenes, los bordes y el padding por defecto*/
+/**********************************/
+/* CSS -- Formulario -- (Alfonso) */
+/**********************************/
 
-body{
-    background-color: rgb(56, 76, 230);
+body {
+    background-color: #0288d1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #263238;;
 }
 
-#container{
-    
+form {
+    /* Centrar el formulario en la página */
+    margin: 1em auto;
+    width: 75%;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+h1 {
+    margin: 0.5em auto;
+    width: 75%;
+    text-align: center;
+    background-color: #CCC;
+    border-radius: 1em;
 }
+
+fieldset {
+    margin-bottom: 10px;
+    background-color: #CCC;
+    border-radius: 1em;
+}
+
+.labelstrong {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+#validacion{
+    text-align: center;
+    width: 50%;
+}
+
+#submit {
+    background-color: #0288d1;
+    color: white;
+    font-weight: bold;
+    border-radius: 1em;
+    padding: 0.8em;
+}
+
+hr {
+    color: #CCC
+}
+
+footer {
+    font-weight: bold;
+    color: #CCC;
+    text-align: center;
+}
+
+
+
+/************************************************************/
+/* CSS -- Banner principal, nav, y el section-aside (Jorge) */
+/************************************************************/
 
 .fit{
     max-width: 100%;
 }
 
 nav{
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    background-color: rgb(56, 76, 230);
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    background-color:#CCC;
+    border-radius: 1em;
 }
 
 #nav-link{
@@ -28,40 +100,31 @@ nav{
 
 #page {
 	/*
-	First, we set the top-level element to display:flex. By
-	default, it will orient its children horizontally. We are
-	providing -webkit- versions for Safari and iOS.
+	Hacemos que el elemento padre tenga el comportamiento flex.
 	*/
-	display: -webkit-flex;
 	display: flex;
 	/* Then, we give it a max-width and center it */
 	max-width: 100%;
-	margin:0 auto;
+	margin: 10px;
 }
 
 #main {
 	/* 
-	We then set the child with the main content of 
-	the page to grow automatically and take all the space
+	Hacemos que el elemento crezca hasta ocupar todo el espacio disponible
 	*/
-	-webkit-flex-grow:1;
 	flex-grow:1;
+    background-color: #CCC;
+    border-radius: 1em;
 }
 
 aside{
 	/* 
-	The sidebar wont grow automatically (flex-grow defaults to 0),
-	and has a width. We should only disable shrinking by setting
-	flex-shrink to 0.
+	Marcamos la anchura del sidebar, y eliminamos el comportamiento de flex.
+    Para que tenga el tamaño del main del section.
 	*/
-	-webkit-flex-shrink:0;
 	flex-shrink:0;
     width: 20%;
     background-color: rgb(156, 176, 230);
-
-}
-
-
-footer{
-
+    margin: 10px;
+    border-radius: 1em;
 }
