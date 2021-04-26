@@ -13,23 +13,6 @@ body {
 .fit{
     max-width: 100%;
 }
-div.cabecera{
-    background-color:#CCC;
-    border-radius: 1em;
-}
-img.foto-cabecera{
-    width: 200px;
-    height: 80px;
-}
-
-#colum1 {
-    text-align: left;
-}
-
-#colum2 {
-    text-align: right;
-}
-
 
 /*Aqui comienza la barra de navegacion*/
 
@@ -60,11 +43,12 @@ article{
     
     
 }
+img{
+    border-radius: 1em;
+}
 #articulo-1{
     float: left;
     width: 50%;
- 
-    
 }
 #articulo-2{
     float: right;
