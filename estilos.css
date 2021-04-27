@@ -51,17 +51,6 @@ article {
     margin-left: 10px;
 }
 
-div.section-text{
-    position: relative;
-    float: right;
-    box-align: right;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    font-style: italic;
-}
-
-
 /*Estilos de la etiqueta aside y sus contenidos*/
 
 aside{
@@ -78,6 +67,14 @@ aside{
 }
 p.aside{
     font-style: italic;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h3.aside{
+    font-style: italic;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .footer-body{
