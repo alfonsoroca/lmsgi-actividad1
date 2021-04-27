@@ -40,7 +40,7 @@ section{
 }
 article{
     text-align: center;
-    
+    padding-top: 3%;
     
 }
 img{
@@ -73,16 +73,6 @@ img{
     width: 50%;
 }
 
-div.section-text{
-    position: relative;
-    float: right;
-    box-align: right;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    font-style: italic;
-}
-
 
 /*Estilos de la etiqueta aside y sus contenidos*/
 
@@ -99,7 +89,8 @@ aside{
 }
 p.aside{
     font-style: italic;
- 
+    padding-left: 3%;
+    padding-right: 3%;
 }
 h3{
     margin:0px;
