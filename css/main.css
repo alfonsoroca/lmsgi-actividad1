@@ -1,5 +1,5 @@
 /**********************************/
-/* CSS -- Formulario -- (Alfonso) */
+/* CSS -- contact_form && location -- (Alfonso) */
 /**********************************/
 
 body {
@@ -19,7 +19,7 @@ form {
   }
 
 h1 {
-    margin: 0.5em auto;
+    margin: 0.75em auto;
     width: 75%;
     text-align: center;
     background-color: #CCC;
@@ -71,9 +71,25 @@ hr {
 }
 
 footer {
+    height: 3em;
     font-weight: bold;
-    color: #CCC;
+    color: #0288d1;
     text-align: center;
+    background-color: #CCC;
+}
+
+div {
+    margin: 0.75em;
+    padding: 1em;
+    border: #CCC;
+    margin-bottom: 10px;
+    background-color: #CCC;
+    border-radius: 0.25em;
+}
+
+p {
+    margin: 0.75em;
+    text-align: justify;
 }
 
 
