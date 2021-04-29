@@ -21,7 +21,7 @@
         <a id="nav-link" href="area-actuacion.html">Cursos</a> |
         <a id="nav-link" href="contact_form.html">Contacto</a> |
         <a id="nav-link" href="location.html">Dónde estamos</a> |
-        <a id="nav-link" href="cookies.html">Política de cookies</a>
+        <a id="nav-link" href="privacidad.html">Política de privacidad</a>
     </nav>
 
     <h1>Formulario de contacto</h1>
@@ -32,27 +32,15 @@
         <fieldset>
             <label class="labelstrong">Datos de contacto</label>
             <br/>
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <label for="nombre">Nombre y Apellidos</label>
+                <label for="nombre">Nombre y Apellidos</label>
                         <input id="nombre" type="text" name="name" autofocus placeholder="Nombre y apellidos" required/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" placeholder="Email de contacto" required/>
-                    </td>
-                    <td>
-                        <label for="telefono">Teléfono de contacto</label>
-                        <input id="telefono" type="telefono" name="telefono" placeholder="Teléfono de contacto"required/>      
-                    </td>
-                </tr>
-            </table>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email de contacto" required/>
+                <label for="telefono">Teléfono de contacto</label>
+                <input id="telefono" type="telefono" name="telefono" placeholder="Teléfono de contacto"required/>      
       </fieldset>
 
-      <!-- En este bloque el cliente va a elegir el idioma sobre el que quiere realizar el curso. Aunque lo ideal sería utilizar un checkbox vamos se utiliza un desplegable para utilizar todos los tipos estudiados en formularios-->
+      <!-- En este bloque el cliente va a elegir el idioma sobre el que quiere realizar el curso.-->
       <fieldset>
         <label class="labelstrong" for="idiomas">Elige del desplegable el idioma del curso sobre el que deseas recibir más información</label>
             <br/>
@@ -103,27 +91,27 @@
 
         <!-- En este bloque vamos a permitir que el cliente pueda hacernos llegar observaciones que no se encuentran recogidas en
         los bloques anteriores-->
+      
         <fieldset>
-                <label class="labelstrong" for="observaciones">Otras observaciones</label>
-                <br/>	
-                <textarea rows="5" cols="100" name="observaciones" placeholder="Escribe las observaciones que quieras hacernos llegar"></textarea>
+            <label class="labelstrong" for="observaciones">Otras observaciones</label>
+            <br/>
+                <div class="container">
+                    <textarea class="textinput" name="observaciones" placeholder="Escribe las observaciones que quieras hacernos llegar"></textarea>                    
+                </div>
         </fieldset>
 
         <!-- En este bloque vamos recoger la aceptación de todo el clausulado legal vigente, el link que le lleva a la política de privacidad de la web
         y el botón para el envío del formulario-->
-        <fieldset id="validacion">
+        <fieldset id="validacion" class="center">
             <input type="checkbox" name="terminos" value="Y" required/>
-            <label for="terminos">He leido y acepto los terminos de uso y la <a href="https://www.mipagina.es/politica-privacidad">política de privacidad</a></label>
+            <label for="terminos">He leido y acepto los terminos de uso y la <a href="privacidad.html">política de privacidad</a></label>
             <br/>
             <input id="submit" type="submit" value="Enviar formulario"/>
         </fieldset>
     </form>
     
-    <footer>
-        <p>
-            <a href="main.html">www.mipagina.es</a> - Todos los derechos reservados - Copyright 2021 &copy;<br/>
-            <a href="cookies.html">Política de cookies</a>
-        </p>
+    <footer>        
+        Todos los derechos reservados - Copyright 2021 &copy; - <a href="privacidad.html">Política de privacidad</a>        
     </footer>
 </body>
 </html>
