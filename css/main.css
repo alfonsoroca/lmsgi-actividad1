@@ -82,26 +82,63 @@ footer {
 /* CSS -- Banner principal, nav, y el section-aside (Jorge) */
 /************************************************************/
 
+/* Clase FIT para que ocupe todo el ancho */
 .fit{
     max-width: 100%;
 }
 
+/* Clases para nav y su menú desplegable */
 nav{
     margin: 10px;
     border: 10px;
-    padding: 10px;
-    background-color:#CCC;
+    padding: 1px;
+    background-color:midnightblue;
     border-radius: 1em;
 }
 
-#nav-link{
-    color: firebrick;
+ul{
+    list-style: none; /*Para quitar los bullets*/
 }
 
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:18px;
+      }
+            
+nav li{
+      display:inline-block;
+      width:150px;
+      height:25px;
+      padding:5px 10px;
+      background-color:midnightblue;
+      text-align:center;
+      color:#fff;
+      position:relative;
+}
+            
+nav li:hover{
+      background-color:aquamarine;
+      color:#000;
+      }
+            
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:0px;
+}
+
+/* Etiquetas para el bloque principal */
 #page {
 	/*
 	Hacemos que el elemento padre tenga el comportamiento flex.
 	*/
+    clear: both;
 	display: flex;
 	/* Then, we give it a max-width and center it */
 	max-width: 100%;
