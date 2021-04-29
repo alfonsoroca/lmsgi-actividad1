@@ -4,17 +4,18 @@
 
 /* Selector que define las características del body */
 body {
-    background-color: #0288d1;
+    /*background-color: #0288d1;*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #263238;;
     width: 95%;
+    background-image: url("../img/languages.jpg")    
 }
 
 /* Selector que define las características de las etiquetas form */
 form {
     /* Centrar el formulario en la página */
     margin: 0.75em auto;
-    width: 75%;
+    width: 90%;
     /* Esquema del formulario */
     padding: 0.75em;
     border: 1px solid #CCC;
@@ -23,6 +24,7 @@ form {
 
 /* Selector que define las características de las etiquetas h1 */
 h1 {
+    font-size: 3em;
     margin: 0.75em auto;
     width: 75%;
     text-align: center;
@@ -33,7 +35,7 @@ h1 {
 /* Selector que define las características de las etiquetas fieldset */
 fieldset {
     margin-bottom: 5px;
-    background-color: #CCC;
+    background-color: #ccc;
     border-radius: 1em;
 }
 
@@ -74,7 +76,6 @@ input {
 /* Selector que define el comportamiento del id validacion */
 #validacion{
     text-align: center;
-    width: 50%;
 }
 
 /* Selector que define el comportamiento del id submit */
@@ -93,7 +94,7 @@ hr {
 
 /* Selector que define las características de las etiquetas footer */
 footer {
-    width: 75%;
+    width: 90%;
     margin: 0.75em auto;
     padding: 0.5em;
     color: #263238;;
@@ -104,10 +105,10 @@ footer {
 
 /* Selector que define las características de las etiquetas div */
 div {
-    width: 75%;
+    width: 90%;
     margin: 0.75em auto;
     padding: 1em;
-    border: #CCC;
+    border: grey;
     margin-bottom: 10px;
     background-color: #CCC;
     border-radius: 1em;
@@ -115,6 +116,13 @@ div {
 
 .center{
     margin: 0 auto;
+}
+
+#contenedor {
+    border-style: dashed;
+    border-color: black;
+    border-width: 15px;
+    background-color: transparent;
 }
 
 
@@ -135,7 +143,7 @@ nav{
     border: 10px;
     padding: 1px;
     background-color:midnightblue;
-    border-radius: 1em;
+    border-radius: 1em;  
 }
 
 ul{
