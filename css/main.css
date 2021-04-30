@@ -215,3 +215,92 @@ aside{
     margin: 10px;
     border-radius: 1em;
 }
+
+/************************************************************/
+/* CSS -- Quienes somos, Area de actuacion (Cesar) */
+/************************************************************/
+
+
+/*Articulos Area de Actuacion*/
+
+#section-cursos{
+    box-align: left;
+    width: 70%;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   /* background-color: rgb(160, 235, 238);*/
+    border-radius: 1em;
+    margin-left: 30px;
+    background-color: #CCC;
+}
+article{
+    text-align: center;
+    padding-top: 3%;   
+}
+
+img{
+    border-radius: 1em;
+}
+
+#articulo-1{
+    float: left;
+    width: 50%;
+}
+#articulo-2{
+    float: right;
+    width: 50%;
+}
+#articulo-3{
+    clear:both;
+    float:left;
+    width: 50%;
+}
+#articulo-4{
+    float: right;
+    width: 50%;
+}
+#articulo-5{
+    clear:both;
+    float:left;
+    width: 50%;
+}
+#articulo-6{
+    float:right;
+    width: 50%;
+}
+
+/*Estructuracion de aside en Area de actuacion*/
+
+#aside-cursos{
+    width: 20%;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: rgb(241, 212, 175);
+    border-radius: 1em;
+    margin-left: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+h3 {
+    background-color: #CCC;
+    border-radius: 1em;
+    text-align: center;
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+/*Este footer se añade  para cuadrar la estructura de la pagina 
+ya que se ha utilizado float */
+#footer-cursos{
+    clear:both;
+    width: 90%;
+    margin: 0.75em auto;
+    padding: 0.5em;
+    color: #263238;
+    text-align: center;
+    background-color: #CCC;
+    border-radius: 0.25em;
+}
