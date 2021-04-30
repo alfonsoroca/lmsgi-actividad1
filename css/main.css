@@ -224,7 +224,7 @@ aside{
 
 
 /* 
-    Seccion y Articulos Area de Actuacion  
+--------------- Seccion y Articulos Area de Actuacion ---------------
 */
 
 #section-cursos{
@@ -274,7 +274,7 @@ img{
 }
 
 /*  
-   Estructuracion de aside en Area de actuacion 
+------------- Estructuracion de aside en Area de actuacion ---------- 
 */
 
 #aside-cursos{
@@ -363,4 +363,119 @@ h3 {
     text-align: center;
     background-color: #CCC;
     border-radius: 0.25em;
+}
+
+/*
+=======================================================================
+           PRUEBA DE RESPONSIVE DESIGN - MEDIA QUERIES
+=======================================================================
+*/
+
+            /*TABLET*/
+
+@media screen and (max-width: 1080px) {
+    
+    #section-cursos {
+        width: auto;
+        float:none;
+        box-align: center;
+    }
+
+    #articulo-1{
+        width: 100%;
+        float:none;                    
+    }
+
+    #articulo-2{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-3{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-4{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-5{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-6{
+        width: 100%;
+        float:none;
+        
+    }
+
+    #aside-cursos {
+        width: auto;
+        float: none;
+        box-align: center;
+        text-align: center;
+    }            
+}
+            /*MOVIL*/
+
+@media screen and (max-width: 480px) {
+    nav{
+        width: auto;
+        box-align: center;
+        background-color:rgb(94, 94, 238); 
+}
+
+    #section-cursos {
+        width: auto;
+        float:none;
+        box-align: center;
+    }
+
+    #articulo-1{
+        width: 100%;
+        float:none;                    
+    }
+
+    #articulo-2{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-3{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-4{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-5{
+        width: 100%;
+        float:none;
+        
+    }
+    #articulo-6{
+        width: 100%;
+        float:none;
+        
+    }
+
+    /*Ajuste de tamaño imagen movil*/
+    img{
+        width: 180px;
+    }
+
+    /*Cambio de color de fondo para movil*/
+    #aside-cursos {
+        width: auto;
+        float: none;
+        box-align: center;
+        text-align: center;
+        background-color: crimson;
+    }            
 }
