@@ -216,12 +216,16 @@ aside{
     border-radius: 1em;
 }
 
+
+
 /************************************************************/
-/* CSS -- Quienes somos, Area de actuacion (Cesar) */
+/*     CSS -- Quienes somos, Area de actuacion (Cesar)      */
 /************************************************************/
 
 
-/*Articulos Area de Actuacion*/
+/* 
+    Seccion y Articulos Area de Actuacion  
+*/
 
 #section-cursos{
     box-align: left;
@@ -229,7 +233,6 @@ aside{
     float: left;
     margin-bottom: 20px;
     margin-top: 20px;
-   /* background-color: rgb(160, 235, 238);*/
     border-radius: 1em;
     margin-left: 30px;
     background-color: #CCC;
@@ -270,11 +273,13 @@ img{
     width: 50%;
 }
 
-/*Estructuracion de aside en Area de actuacion*/
+/*  
+   Estructuracion de aside en Area de actuacion 
+*/
 
 #aside-cursos{
     width: 20%;
-    float: left;
+    float: right;
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: left;
@@ -292,9 +297,64 @@ h3 {
     font-style: oblique;
 }
 
-/*Este footer se añade  para cuadrar la estructura de la pagina 
-ya que se ha utilizado float */
+/*
+    Footer añadido para cuadrar la estructura de la pagina 
+    ya que se ha utilizado float y descuadraria con el footer generico
+*/
+
 #footer-cursos{
+    clear:both;
+    width: 90%;
+    margin: 0.75em auto;
+    padding: 0.5em;
+    color: #263238;
+    text-align: center;
+    background-color: #CCC;
+    border-radius: 0.25em;
+}
+
+/*
+    Estilo pagina quienes somos
+*/
+
+#section-quienes-somos{
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 1em;
+    margin-left: 10px;
+    background-color: rgb(240, 119, 119);
+}
+
+.foto-section{
+    width: 99%;
+    height: 370px;
+    border-radius: 7em;
+    border-color: black;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+#aside-quienes-somos{
+    width: 40%;
+    float: right;
+    margin-top: 20px;
+    text-align: left;
+    background-color: rgb(241, 212, 175);
+    border-radius: 1em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*
+    Footer añadido para cuadrar la estructura de la pagina 
+    ya que se ha utilizado float y descuadraria con el footer generico
+*/
+
+#footer-quienes-somos{
     clear:both;
     width: 90%;
     margin: 0.75em auto;
