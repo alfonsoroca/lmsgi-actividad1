@@ -1,6 +1,6 @@
-/**********************************/
+/************************************************************/
 /* CSS -- contact_form,  location y privacidad -- (Alfonso) */
-/**********************************/
+/************************************************************/
 
 /* Selector que define las características del body */
 body {
@@ -105,7 +105,6 @@ footer {
 
 /* Selector que define las características de las etiquetas div */
 div {
-    width: 90%;
     margin: 0.75em auto;
     padding: 1em;
     border: grey;
@@ -119,6 +118,7 @@ div {
 }
 
 #contenedor {
+    width: 90%;
     border-style: dashed;
     border-color: black;
     border-width: 15px;
@@ -199,6 +199,7 @@ nav li:hover>ul{
 	/* 
 	Hacemos que el elemento crezca hasta ocupar todo el espacio disponible
 	*/
+    padding: 10px;
 	flex-grow:1;
     background-color: #CCC;
     border-radius: 1em;
@@ -212,11 +213,32 @@ aside{
 	flex-shrink:0;
     width: 20%;
     background-color: rgb(156, 176, 230);
-    margin: 10px;
+    margin: 3px;
     border-radius: 1em;
 }
 
+.text-justify{
+    text-align: justify;
+}
 
+#article-h1{
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+#article-footer{
+    align-self: right;
+    text-align: right;
+    
+}
+
+.banner{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
 
 /************************************************************/
 /*     CSS -- Quienes somos, Area de actuacion (Cesar)      */
