@@ -366,14 +366,16 @@ h3 {
 }
 
 /*
-=======================================================================
-           PRUEBA DE RESPONSIVE DESIGN - MEDIA QUERIES
-=======================================================================
+        =======================================================================
+                      PRUEBA DE RESPONSIVE DESIGN - MEDIA QUERIES
+        =======================================================================
 */
 
-            /*TABLET*/
+    /*======================== TABLET ========(Afecta solo a pagina Cursos)================*/
 
-@media screen and (max-width: 1080px) {
+    /* TABLET LANDSCAPE (Horizontal)*/
+
+@media screen and (min-width: 900px) and (max-width: 1300px) and (orientation: landscape){
     
     #section-cursos {
         width: auto;
@@ -382,32 +384,32 @@ h3 {
     }
 
     #articulo-1{
-        width: 100%;
+        width: auto;
         float:none;                    
     }
 
     #articulo-2{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-3{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-4{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-5{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-6{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
@@ -419,9 +421,59 @@ h3 {
         text-align: center;
     }            
 }
-            /*MOVIL*/
+    /* TABLET PORTRAIT (Vertical)*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 900px) and (max-width: 1300px) and (orientation: portrait){
+    
+        #section-cursos {
+            width: auto;
+            float:none;
+            box-align: center;
+        }
+    
+        #articulo-1{
+            width: auto;
+            float:none;                    
+        }
+    
+        #articulo-2{
+            width: auto;
+            float:none;
+            
+        }
+        #articulo-3{
+            width: auto;
+            float:none;
+            
+        }
+        #articulo-4{
+            width: auto;
+            float:none;
+            
+        }
+        #articulo-5{
+            width: auto;
+            float:none;
+            
+        }
+        #articulo-6{
+            width: auto;
+            float:none;
+            
+        }
+    
+        #aside-cursos {
+            width: auto;
+            float: none;
+            box-align: center;
+            text-align: center;
+        }            
+    }
+    /*======================== MOVIL ==============(Afecta solo a pagina Cursos)==========*/
+
+        /* MOVIL LANDSCAPE (Horizontal)*/
+
+@media screen and (max-width: 900px) and (orientation: landscape){
     nav{
         width: auto;
         box-align: center;
@@ -432,35 +484,97 @@ h3 {
         width: auto;
         float:none;
         box-align: center;
+        background-color: crimson;
     }
 
     #articulo-1{
-        width: 100%;
+        width: auto;
         float:none;                    
     }
 
     #articulo-2{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-3{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-4{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-5{
-        width: 100%;
+        width: auto;
         float:none;
         
     }
     #articulo-6{
-        width: 100%;
+        width: auto;
+        float:none;
+        
+    }
+
+    /*Ajuste de tamaño imagen movil*/
+    img{
+        width: 180px;
+    }
+
+    /*Cambio de color de fondo para movil*/
+    #aside-cursos {
+        width: auto;
+        float: none;
+        box-align: center;
+        text-align: center;
+        background-color: crimson;
+    }            
+}
+        /* MOVIL PORTRAIT (Vertical)*/
+
+@media screen and (max-width: 900px) and (orientation: portrait){
+    nav{
+        width: auto;
+        box-align: center;
+        background-color:rgb(40, 40, 228); 
+}
+
+    #section-cursos {
+        width: auto;
+        float:none;
+        box-align: center;
+        background-color: rgb(20, 220, 30);
+    }
+
+    #articulo-1{
+        width: auto;
+        float:none;                    
+    }
+
+    #articulo-2{
+        width: auto;
+        float:none;
+        
+    }
+    #articulo-3{
+        width: auto;
+        float:none;
+        
+    }
+    #articulo-4{
+        width: auto;
+        float:none;
+        
+    }
+    #articulo-5{
+        width: auto;
+        float:none;
+        
+    }
+    #articulo-6{
+        width: auto;
         float:none;
         
     }
