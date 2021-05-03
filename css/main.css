@@ -1,14 +1,18 @@
 /************************************************************/
 /* CSS -- contact_form,  location y privacidad -- (Alfonso) */
 /************************************************************/
+* {
+    margin: 0px;
+    border: 0px;
+}
 
 /* Selector que define las características del body */
 body {
     /*background-color: #0288d1; para quitar pues dejamos la imagen del fondo*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #263238;;
-    width: 95%;
-    background-image: url("../img/languages.jpg")    
+    color: #263238;
+    background-image: url("../img/languages.jpg");
+    background-position: center;    
 }
 
 /* Selector que define las características de las etiquetas form */
@@ -60,11 +64,6 @@ input {
 }
 
 
-/* Selector que define las características de la clase container */
-.container {
-    margin: 0px auto;
-}
-
 /* Selector que define las características de la clase textinput */
 .textinput {
     padding: 3% auto;
@@ -104,12 +103,21 @@ footer {
     border-radius: 0.25em;
 }
 
+iframe{
+    margin: 1em;
+    width: auto;
+}
+
+p {
+    text-align: justify;
+    margin: 1em;
+    padding: 1em;
+}
+
 /* Selector que define las características de las etiquetas div */
 div {
-    margin: 0.75em auto;
-    padding: inherit;
     border: grey;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: #CCC;
     border-radius: 1em;
 }
@@ -119,16 +127,13 @@ div {
 }
 
 #contenedor {
+    margin: 2em auto;
     width: 90%;
     border-style: dashed;
     border-color: black;
     border-width: 15px;
     background-color: transparent;
 }
-
-
-
-
 
 
 /************************************************************/
@@ -150,6 +155,9 @@ nav{
 }
 
 ul{
+    text-align: justify;
+    max-width:95%;
+    margin: 0 auto;
     list-style: none; /*Para quitar los bullets*/
 }
 
@@ -160,6 +168,7 @@ nav a{
       }
             
 nav li{
+      float: none;
       display:inline-block;
       width:150px;
       height:25px;
@@ -304,18 +313,19 @@ img{
 */
 
 #aside-cursos{
+    margin: 20px;
     width: 20%;
     float: right;
-    margin-bottom: 20px;
-    margin-top: 20px;
     text-align: left;
     background-color: rgb(241, 212, 175);
     border-radius: 1em;
     margin-left: 30px;
     padding-left: 1%;
     padding-right: 1%;
+    
 }
 h3 {
+    margin: 1em auto;
     background-color: #CCC;
     border-radius: 1em;
     text-align: center;
@@ -348,8 +358,8 @@ h3 {
     width: 50%;
     margin-bottom: 20px;
     margin-top: 20px;
-    border-radius: 1em;
     margin-left: 10px;
+    border-radius: 1em;
     background-color: rgb(240, 119, 119);
 }
 
@@ -365,9 +375,9 @@ h3 {
 }
 
 #aside-quienes-somos{
+    margin: 20px;
     width: 40%;
     float: right;
-    margin-top: 20px;
     text-align: left;
     background-color: rgb(241, 212, 175);
     border-radius: 1em;
@@ -463,58 +473,65 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
         border-color: blueviolet;
     }
 
-    nav{
-    position: relative;
-    margin: 8px;
-    border: 8px;
-    padding: 1px;
-    border-radius: 1em;
-    left: 10%;  
-}
-nav a{
+    nav a{
     text-align: center;
     text-decoration:none;
     color:inherit;
     font-size:15px;
-}
+    }
+
     #section-cursos {
-        width: auto;
-        float:none;
+        margin: 2em auto;
+        width: 90%;
+        float: none;
         box-align: center;
-        background-color: crimson;
+        background-color: aquamarine;
     }
 
     #articulo-1{
         width: auto;
-        float:none;                    
+        float: none;                    
     }
-
     #articulo-2{
         width: auto;
-        float:none;
+        float: none;
         
     }
     #articulo-3{
         width: auto;
-        float:none;
+        float: none;
         
     }
     #articulo-4{
         width: auto;
-        float:none;
+        float: none;
         
     }
     #articulo-5{
         width: auto;
-        float:none;
+        float: none;
         
     }
     #articulo-6{
         width: auto;
-        float:none;
+        float: none;
         
     }
+    #section-quienes-somos{
+        margin: 2em auto;
+        float: none;
+        width: 90%;
+    }
 
+    #aside-quienes-somos{
+        float: none;
+        margin: 2em auto;
+        width:90%;   
+    }
+
+    h3 {
+        width: 30%;
+    }
     /*Ajuste de tamaño imagen movil*/
     /*
     img{
@@ -524,11 +541,13 @@ nav a{
 
     /*Cambio de color de fondo para movil*/
     #aside-cursos {
-        width: auto;
+        margin: 2em auto;
+        width: 90%;
         float: none;
         box-align: center;
         text-align: center;
         background-color: crimson;
+        padding: 0px;
     }
     
     /*Cambio de la etiqueta h1 para movil*/
@@ -586,24 +605,11 @@ Adaptación optimizada para verse en un iPad en posición vertical.
         border-color: brown;
     }
     
-    nav{
-        position: relative;
-        margin: 8px;
-        border: 8px;
-        padding: 1px;
-        border-radius: 1em;
-        left: 10%;  
-    }
     nav a{
         text-align: center;
         text-decoration:none;
         color:inherit;
         font-size:15px;
-    }
-    nav ul{
-        text-align: center;
-        display: inline-block;
-        position: relative;
     }
 
     #section-cursos {
@@ -657,6 +663,19 @@ Adaptación optimizada para verse en un iPad en posición vertical.
         text-align: center;
         background-color: crimson;
 
+    }
+
+    #section-quienes-somos{
+        margin: 2em auto;
+        float: none;
+        width: 90%;
+    }
+
+    #aside-quienes-somos{
+        float: none;
+        margin: 2em auto;
+        width:90%;
+        
     }            
 }
 
@@ -674,14 +693,6 @@ Adaptación optimizada para verse en un iPhone posición vertical.
         border-color: chartreuse;
     }
     
-    nav{
-        position: relative;
-        margin: 8px;
-        border: 8px;
-        padding: 1px;
-        border-radius: 1em;
-        left: 10%;  
-    }
     nav a{
         text-align: center;
         text-decoration:none;
@@ -726,6 +737,19 @@ Adaptación optimizada para verse en un iPhone posición vertical.
     #hr-banner{
         display: none;
     }
+
+    #section-quienes-somos{
+        margin: 2em auto;
+        float: none;
+        width: 90%;
+    }
+
+    #aside-quienes-somos{
+        float: none;
+        margin: 2em auto;
+        width:90%;
+        
+    }
 }
 
 /*
@@ -737,14 +761,6 @@ Adaptación optimizada para verse en un iPhone posición horizontal.
         border-color: chocolate;
     }
 
-    nav{
-        position: relative;
-        margin: 8px;
-        border: 8px;
-        padding: 1px;
-        border-radius: 1em;
-        left: 10%;  
-    }
     nav a{
         text-align: center;
         text-decoration:none;
@@ -752,9 +768,6 @@ Adaptación optimizada para verse en un iPhone posición horizontal.
         font-size:15px;
     }
 
-
-
-    
     /*Cambio de la etiqueta h1 para movil*/
     h1 {
         font-size: 2em;
