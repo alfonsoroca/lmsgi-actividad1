@@ -4,7 +4,7 @@
 
 /* Selector que define las características del body */
 body {
-    /*background-color: #0288d1;*/
+    /*background-color: #0288d1; para quitar pues dejamos la imagen del fondo*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #263238;;
     width: 95%;
@@ -67,10 +67,11 @@ input {
 
 /* Selector que define las características de la clase textinput */
 .textinput {
+    padding: 3% auto;
     width: 100%;
     min-height: 75px;
     outline: none;
-    resize: none;        
+    resize: none;   
 }
 
 /* Selector que define el comportamiento del id validacion */
@@ -124,6 +125,8 @@ div {
     border-width: 15px;
     background-color: transparent;
 }
+
+
 
 
 
@@ -564,7 +567,52 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
         box-align: center;
         text-align: center;
         background-color: crimson;
-    }            
+    }
+    
+    /*Cambio de la etiqueta h1 para movil*/
+    h1 {
+        font-size: 2em;
+        color: white;
+        margin: 0.75em auto;
+        width: 75%;
+        text-align: center;
+        background-color: black;
+        border-radius: 1em;
+    }
+
+    /* Cambio de las etiquetas fieldset para movil*/
+    fieldset {
+        color: blanchedalmond;
+        margin-bottom: 5px;
+        background-color: rgb(44, 44, 44);
+        border-radius: 1em;
+    }
+
+    /* Cambio de las etiquetas label para movil*/
+    label {
+        display: block;
+        margin-top: 1px;
+        margin-bottom: 1px;   
+    }
+
+    /* Cambio que define las características de la clase textinput para movil*/
+    .textinput {
+        color: brown;
+        background-color: lightgrey;
+        padding: 3% auto;
+        width: 100%;
+        min-height: 75px;
+        outline: none;
+        resize: none;   
+    }
+    /* Cambio que define el comportamiento del id submit para movil*/
+        #submit {
+        background-color: #ebb135;
+        color: rgb(4, 4, 4);
+        font-weight: bold;
+        border-radius: 1em;
+        padding: 0.8em;
+    }
 }
         /* MOVIL PORTRAIT (Vertical)*/
 /*
@@ -627,6 +675,7 @@ Adaptación optimizada para verse en un iPad en posición vertical.
         box-align: center;
         text-align: center;
         background-color: crimson;
+
     }            
 }
 
@@ -700,4 +749,55 @@ Adaptación optimizada para verse en un iPhone posición horizontal.
 */
 @media screen and (max-height: 700px) and (orientation: landscape){
 
+
+
+
+    
+    /*Cambio de la etiqueta h1 para movil*/
+    h1 {
+        font-size: 2em;
+        color: white;
+        margin: 0.75em auto;
+        width: 75%;
+        text-align: center;
+        background-color: black;
+        border-radius: 1em;
+    }
+
+    /* Cambio de las etiquetas fieldset para movil*/
+    fieldset {
+        color: blanchedalmond;
+        margin-bottom: 5px;
+        background-color: rgb(44, 44, 44);
+        border-radius: 1em;
+    }
+
+    /* Cambio de las etiquetas label para movil*/
+    label {
+        display: block;
+        margin-top: 1px;
+        margin-bottom: 1px;   
+    }
+
+    /* Cambio que define las características de la clase textinput para movil*/
+    .textinput {
+        color: brown;
+        background-color: lightgrey;
+        padding: 3% auto;
+        width: 100%;
+        min-height: 75px;
+        outline: none;
+        resize: none;   
+    }
+    /* Cambio que define el comportamiento del id submit para movil*/
+        #submit {
+        background-color: #ebb135;
+        color: rgb(4, 4, 4);
+        font-weight: bold;
+        border-radius: 1em;
+        padding: 0.8em;
+    }
+
+
 }
+
