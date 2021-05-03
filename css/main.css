@@ -107,7 +107,7 @@ footer {
 /* Selector que define las características de las etiquetas div */
 div {
     margin: 0.75em auto;
-    padding: 1em;
+    padding: inherit;
     border: grey;
     margin-bottom: 10px;
     background-color: #CCC;
@@ -404,9 +404,6 @@ Adaptación para ancho variable de monitores de más de 1300px de ancho.
 
 
 
-    /*======================== TABLET ========(Afecta solo a pagina Cursos)================*/
-
-    /* TABLET LANDSCAPE (Horizontal)*/
 /*
 Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
 */
@@ -456,67 +453,30 @@ Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
         text-align: center;
     }            
 }
-    /* TABLET PORTRAIT (Vertical)*/
 
-@media screen and (min-width: 900px) and (max-width: 1300px) and (orientation: portrait){
-    
-        #section-cursos {
-            width: auto;
-            float:none;
-            box-align: center;
-        }
-    
-        #articulo-1{
-            width: auto;
-            float:none;                    
-        }
-    
-        #articulo-2{
-            width: auto;
-            float:none;
-            
-        }
-        #articulo-3{
-            width: auto;
-            float:none;
-            
-        }
-        #articulo-4{
-            width: auto;
-            float:none;
-            
-        }
-        #articulo-5{
-            width: auto;
-            float:none;
-            
-        }
-        #articulo-6{
-            width: auto;
-            float:none;
-            
-        }
-    
-        #aside-cursos {
-            width: auto;
-            float: none;
-            box-align: center;
-            text-align: center;
-        }            
-    }
-    /*======================== MOVIL ==============(Afecta solo a pagina Cursos)==========*/
-
-        /* MOVIL LANDSCAPE (Horizontal)*/
 /*
 Adaptación optimizada para verse en un iPad en posición horizontal.
 */
-@media screen and (max-height: 900px) and (orientation: landscape){
-    nav{
-        width: auto;
-        box-align: center;
-        background-color:rgb(94, 94, 238); 
-}
+@media screen and (max-width: 900px) and (orientation: landscape){
 
+    #contenedor {
+        border-color: blueviolet;
+    }
+
+    nav{
+    position: relative;
+    margin: 8px;
+    border: 8px;
+    padding: 1px;
+    border-radius: 1em;
+    left: 10%;  
+}
+nav a{
+    text-align: center;
+    text-decoration:none;
+    color:inherit;
+    font-size:15px;
+}
     #section-cursos {
         width: auto;
         float:none;
@@ -556,9 +516,11 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
     }
 
     /*Ajuste de tamaño imagen movil*/
+    /*
     img{
-        width: 180px;
+        width: 20%;
     }
+    */
 
     /*Cambio de color de fondo para movil*/
     #aside-cursos {
@@ -614,16 +576,35 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
         padding: 0.8em;
     }
 }
-        /* MOVIL PORTRAIT (Vertical)*/
+
 /*
 Adaptación optimizada para verse en un iPad en posición vertical.
 */
-@media screen and (max-width: 900px) and (orientation: portrait){
+@media screen and (max-height: 900px) and (orientation: portrait){
+    
+    #contenedor {
+        border-color: brown;
+    }
+    
     nav{
-        width: auto;
-        box-align: center;
-        background-color:rgb(40, 40, 228); 
-}
+        position: relative;
+        margin: 8px;
+        border: 8px;
+        padding: 1px;
+        border-radius: 1em;
+        left: 10%;  
+    }
+    nav a{
+        text-align: center;
+        text-decoration:none;
+        color:inherit;
+        font-size:15px;
+    }
+    nav ul{
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
 
     #section-cursos {
         width: auto;
@@ -687,14 +668,17 @@ Adaptación optimizada para verse en un iPad en posición vertical.
 /*
 Adaptación optimizada para verse en un iPhone posición vertical.
 */
-@media screen and (max-width: 700px) and (orientation: portrait){
+@media screen and (max-width: 500px) and (orientation: portrait){
+    
+    #contenedor {
+        border-color: chartreuse;
+    }
+    
     nav{
         position: relative;
         margin: 8px;
-        margin-right: 100px;
         border: 8px;
         padding: 1px;
-        background-color:midnightblue;
         border-radius: 1em;
         left: 10%;  
     }
@@ -747,8 +731,26 @@ Adaptación optimizada para verse en un iPhone posición vertical.
 /*
 Adaptación optimizada para verse en un iPhone posición horizontal.
 */
-@media screen and (max-height: 700px) and (orientation: landscape){
+@media screen and (max-height: 500px) and (orientation: landscape){
 
+    #contenedor {
+        border-color: chocolate;
+    }
+
+    nav{
+        position: relative;
+        margin: 8px;
+        border: 8px;
+        padding: 1px;
+        border-radius: 1em;
+        left: 10%;  
+    }
+    nav a{
+        text-align: center;
+        text-decoration:none;
+        color:inherit;
+        font-size:15px;
+    }
 
 
 
