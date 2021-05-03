@@ -1,6 +1,6 @@
-/**********************************/
+/************************************************************/
 /* CSS -- contact_form,  location y privacidad -- (Alfonso) */
-/**********************************/
+/************************************************************/
 
 /* Selector que define las características del body */
 body {
@@ -105,7 +105,6 @@ footer {
 
 /* Selector que define las características de las etiquetas div */
 div {
-    width: 90%;
     margin: 0.75em auto;
     padding: 1em;
     border: grey;
@@ -119,6 +118,7 @@ div {
 }
 
 #contenedor {
+    width: 90%;
     border-style: dashed;
     border-color: black;
     border-width: 15px;
@@ -170,6 +170,7 @@ nav li{
 nav li:hover{
       background-color:aquamarine;
       color:#000;
+      z-index: 10;
       }
             
 nav li>ul{
@@ -181,6 +182,7 @@ nav li:hover>ul{
       position:absolute;
       top:30px;
       left:0px;
+      z-index: 10;
 }
 
 /* Etiquetas para el bloque principal */
@@ -190,7 +192,6 @@ nav li:hover>ul{
 	*/
     clear: both;
 	display: flex;
-	/* Then, we give it a max-width and center it */
 	max-width: 100%;
 	margin: 10px;
 }
@@ -199,24 +200,46 @@ nav li:hover>ul{
 	/* 
 	Hacemos que el elemento crezca hasta ocupar todo el espacio disponible
 	*/
+    padding: 10px;
 	flex-grow:1;
     background-color: #CCC;
     border-radius: 1em;
 }
 
-aside{
+#aside-publi{
 	/* 
 	Marcamos la anchura del sidebar, y eliminamos el comportamiento de flex.
-    Para que tenga el tamaño del main del section.
+    Para que rellene el tamaño del main del section.
 	*/
 	flex-shrink:0;
     width: 20%;
     background-color: rgb(156, 176, 230);
-    margin: 10px;
+    margin: 3px;
     border-radius: 1em;
 }
 
+.text-justify{
+    text-align: justify;
+}
 
+#article-h1{
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+#article-footer{
+    align-self: right;
+    text-align: right;
+    
+}
+
+.banner{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
 
 /************************************************************/
 /*     CSS -- Quienes somos, Area de actuacion (Cesar)      */
@@ -371,10 +394,19 @@ h3 {
         =======================================================================
 */
 
+/*
+Adaptación para ancho variable de monitores de más de 1300px de ancho.
+*/
+/***** No ponemos ninguna condición ******/
+
+
+
     /*======================== TABLET ========(Afecta solo a pagina Cursos)================*/
 
     /* TABLET LANDSCAPE (Horizontal)*/
-
+/*
+Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
+*/
 @media screen and (min-width: 900px) and (max-width: 1300px) and (orientation: landscape){
     
     #section-cursos {
@@ -472,8 +504,10 @@ h3 {
     /*======================== MOVIL ==============(Afecta solo a pagina Cursos)==========*/
 
         /* MOVIL LANDSCAPE (Horizontal)*/
-
-@media screen and (max-width: 900px) and (orientation: landscape){
+/*
+Adaptación optimizada para verse en un iPad en posición horizontal.
+*/
+@media screen and (max-height: 900px) and (orientation: landscape){
     nav{
         width: auto;
         box-align: center;
@@ -533,7 +567,9 @@ h3 {
     }            
 }
         /* MOVIL PORTRAIT (Vertical)*/
-
+/*
+Adaptación optimizada para verse en un iPad en posición vertical.
+*/
 @media screen and (max-width: 900px) and (orientation: portrait){
     nav{
         width: auto;
@@ -592,4 +628,76 @@ h3 {
         text-align: center;
         background-color: crimson;
     }            
+}
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/*
+Adaptación optimizada para verse en un iPhone posición vertical.
+*/
+@media screen and (max-width: 700px) and (orientation: portrait){
+    nav{
+        position: relative;
+        margin: 8px;
+        margin-right: 100px;
+        border: 8px;
+        padding: 1px;
+        background-color:midnightblue;
+        border-radius: 1em;
+        left: 10%;  
+    }
+    nav a{
+        text-align: center;
+        text-decoration:none;
+        color:inherit;
+        font-size:15px;
+    }
+
+    /* Etiquetas para el bloque principal */
+    #page {
+        clear: both;
+        display: block;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    #main {
+        padding: 10px;
+        display: block;
+        background-color: #CCC;
+        border-radius: 1em;
+    }
+    #aside-publi{
+        /* 
+        Queremos que el aside se coloque debajo de los articles
+        */
+        position:relative;
+        display: block;
+        width: 100%;
+        background-color: rgb(156, 176, 230);
+        margin: 3px;
+        border-radius: 1em;
+    }
+         
+    .banner{
+        display: inline-block;
+        font-size: 8px;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+    #hr-banner{
+        display: none;
+    }
+}
+
+/*
+Adaptación optimizada para verse en un iPhone posición horizontal.
+*/
+@media screen and (max-height: 700px) and (orientation: landscape){
+
 }
