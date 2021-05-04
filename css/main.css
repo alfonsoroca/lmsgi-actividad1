@@ -443,7 +443,7 @@ h3 {
 /*
 Adaptación para ancho variable de monitores de más de 1300px de ancho.
 */
-/***** No ponemos ninguna condición ******/
+/***** No ponemos ninguna condición ****** Funcionamiento por defecto ******/
 
 
 
@@ -451,6 +451,7 @@ Adaptación para ancho variable de monitores de más de 1300px de ancho.
 Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
 */
 @media screen and (min-width: 900px) and (max-width: 1300px) and (orientation: landscape){
+    /* Afecta sólo a la página area-actuacion */
     
     #section-cursos {
         margin: 2em auto;
@@ -565,12 +566,6 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
     h3 {
         width: 30%;
     }
-    /*Ajuste de tamaño imagen movil*/
-    /*
-    img{
-        width: 20%;
-    }
-    */
 
     /*Cambio de color de fondo para movil*/
     #aside-cursos {
@@ -608,6 +603,12 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
         margin-bottom: 1px;   
     }
 
+    /* Cambio que define las características de la clase labelstrong para iPad*/
+    .labelstrong {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
     /* Cambio que define las características de la clase textinput para iPad*/
     .textinput {
         color: brown;
@@ -638,11 +639,36 @@ Adaptación optimizada para verse en un iPad en posición vertical.
         border-color: brown;
     }
     
+    /* Ocultamos el nav normal y mostramos uno estilo "nav-desplegable" (nav-icono) */
+    #nav-normal{
+        display:none;
+    }
+
+    #nav-icono{
+        display:block;
+    }
+
+    #boton-icono{
+        display:inline;
+    }
+    #nav-icono:hover>ul {
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+    }
+
     nav a{
         text-align: center;
         text-decoration:none;
         color:inherit;
-        font-size:15px;
+        font-size:12px;
+    }
+
+    nav li{
+        width: 100px;
+        height: 25px;
     }
 
     #section-cursos {
@@ -728,6 +754,12 @@ Adaptación optimizada para verse en un iPad en posición vertical.
         border-radius: 1em;
     }
 
+    /* Cambio que define las características de la clase labelstrong para iPad*/
+    .labelstrong {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
     /* Cambio de las etiquetas label para iPad*/
     label {
         display: block;
@@ -759,11 +791,12 @@ Adaptación optimizada para verse en un iPad en posición vertical.
 /*
 Adaptación optimizada para verse en un iPhone posición vertical.
 */
-@media screen and (max-width: 500px) and (orientation: portrait){
+@media screen and (max-width: 500px) and (orientation: portrait){    
     
     #contenedor {
         border-color: chartreuse;
     }
+    /* Ocultamos el nav normal y mostramos uno estilo "nav-desplegable" (nav-icono) */
     #nav-normal{
         display:none;
     }
@@ -864,49 +897,10 @@ Adaptación optimizada para verse en un iPhone posición vertical.
         border-radius: 1em;
     }
 
-    /* Cambio de las etiquetas label para iPhone*/
-    label {
-        display: block;
-        margin-top: 1px;
-        margin-bottom: 1px;   
-    }
-
-    /* Cambio que define las características de la clase textinput para iPhone*/
-    .textinput {
-        color: brown;
-        background-color: lightgrey;
-        padding: 3% auto;
-        width: 100%;
-        min-height: 75px;
-        outline: none;
-        resize: none;   
-    }
-    /* Cambio que define el comportamiento del id submit para iPhone*/
-        #submit {
-        background-color: #ebb135;
-        color: rgb(4, 4, 4);
+    /* Cambio que define las características de la clase labelstrong para iPhone*/
+    .labelstrong {
+        font-size: 1.15em;
         font-weight: bold;
-        border-radius: 1em;
-        padding: 0.8em;
-    }
-
-    /*Cambio de la etiqueta h1 para iPhone*/
-    h1 {
-        font-size: 1.8em;
-        color: white;
-        margin: 0.75em auto;
-        width: 75%;
-        text-align: center;
-        background-color: black;
-        border-radius: 1em;
-    }
-
-    /* Cambio de las etiquetas fieldset para iPhone*/
-    fieldset {
-        color: blanchedalmond;
-        margin-bottom: 5px;
-        background-color: rgb(44, 44, 44);
-        border-radius: 1em;
     }
 
     /* Cambio de las etiquetas label para iPhone*/
@@ -934,6 +928,7 @@ Adaptación optimizada para verse en un iPhone posición vertical.
         border-radius: 1em;
         padding: 0.8em;
     }
+
 }
 
 /*
@@ -970,6 +965,12 @@ Adaptación optimizada para verse en un iPhone posición horizontal.
         background-color: rgb(44, 44, 44);
         border-radius: 1em;
     }
+
+    /* Cambio que define las características de la clase labelstrong para iPhone*/
+    .labelstrong {
+        font-size: 1.15em;
+        font-weight: bold;
+    }    
 
     /* Cambio de las etiquetas label para iPhone*/
     label {
