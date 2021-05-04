@@ -650,9 +650,9 @@ Adaptación optimizada para verse en un iPad en posición vertical.
     }
 
     #section-cursos {
-        width: auto;
+        width: 90%;
         float:none;
-        box-align: center;
+        margin: 10px auto;
         background-color: rgb(20, 220, 30);
     }
 
@@ -696,7 +696,6 @@ Adaptación optimizada para verse en un iPad en posición vertical.
     #aside-cursos {
         width: auto;
         float: none;
-        box-align: center;
         text-align: center;
         background-color: crimson;
 
