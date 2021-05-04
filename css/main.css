@@ -144,9 +144,24 @@ div {
 .fit{
     max-width: 100%;
 }
-
+#nav-icono{
+    display: none;
+    margin: 10px;
+    border: 10px;
+    padding: 1px;
+    background-color:midnightblue;
+    border-radius: 1em;
+    width: 50px;
+    height: 50px; 
+}
+#boton-icono{
+    margin: 5px;
+    max-height: 36px;
+    max-width: 36px;
+    border-radius: 1em;
+}
 /* Clases para nav y su menú desplegable */
-nav{
+#nav-normal{
     margin: 10px;
     border: 10px;
     padding: 1px;
@@ -156,45 +171,51 @@ nav{
 
 ul{
     text-align: justify;
-    max-width:95%;
     margin: 0 auto;
+    padding-left: 0px; /*Por defecto tiene 40 de padding-left*/
     list-style: none; /*Para quitar los bullets*/
 }
 
 nav a{
-      text-decoration:none;
-      color:inherit;
-      font-size:18px;
-      }
+    text-decoration:none;
+    color:inherit;
+    font-size:18px;
+}
             
 nav li{
-      float: none;
-      display:inline-block;
-      width:150px;
-      height:25px;
-      padding:5px 10px;
-      background-color:midnightblue;
-      text-align:center;
-      color:#fff;
-      position:relative;
+    float: none;
+    display:inline-block;
+    flex-grow: 1;
+    width: 135px;
+    height: 25px;
+    padding: 5px;
+    border: solid 3px;
+    border-color: midnightblue;
+    border-radius: 1em;
+    background-color:midnightblue;
+    text-align:center;
+    color:#fff;
+    position:relative;/*Esta es muy importante para que funcione correctamente*/
 }
             
 nav li:hover{
-      background-color:aquamarine;
-      color:#000;
-      z-index: 10;
-      }
+    border-color: black;
+    background-color:aquamarine;
+    color:#000;
+    z-index: 10;
+}
             
 nav li>ul{
-      display:none;
-      }
+    display:none;
+    padding-left: 15px;
+}
 
 nav li:hover>ul{
-      display:block;
-      position:absolute;
-      top:30px;
-      left:0px;
-      z-index: 10;
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+    z-index: 10;
 }
 
 /* Etiquetas para el bloque principal */
@@ -224,9 +245,10 @@ nav li:hover>ul{
     Para que rellene el tamaño del main del section.
 	*/
 	flex-shrink:0;
-    width: 20%;
+    width: 25%;
     background-color: rgb(156, 176, 230);
     margin: 3px;
+    padding: 3px;
     border-radius: 1em;
 }
 
@@ -249,8 +271,11 @@ nav li:hover>ul{
 .banner{
     max-width: 100%;
     max-height: 100%;
-    margin: 5px;
-    padding: 5px;
+    object-fit: contain;
+}
+
+#hr-banner{
+    border-color: black;
 }
 
 /************************************************************/
@@ -679,11 +704,6 @@ Adaptación optimizada para verse en un iPad en posición vertical.
     }            
 }
 
-
-/*****************/
-/* MEDIA QUERIES */
-/*****************/
-
 /*
 Adaptación optimizada para verse en un iPhone posición vertical.
 */
@@ -692,13 +712,37 @@ Adaptación optimizada para verse en un iPhone posición vertical.
     #contenedor {
         border-color: chartreuse;
     }
+    #nav-normal{
+        display:none;
+    }
+
+    #nav-icono{
+        display:block;
+    }
+
+    #boton-icono{
+        display:inline;
+    }
+    #nav-icono:hover>ul {
+        display: block;
+    }
     
+    nav ul{
+        display: none;
+    }
+
     nav a{
         text-align: center;
         text-decoration:none;
         color:inherit;
-        font-size:15px;
+        font-size:12px;
     }
+    
+    nav li{
+        width: 100px;
+        height: 25px;
+    }
+    
 
     /* Etiquetas para el bloque principal */
     #page {
