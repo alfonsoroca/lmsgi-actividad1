@@ -314,6 +314,10 @@ img{
     border-radius: 1em;
 }
 
+#img-curso {
+    width: 50%;
+}
+
 #articulo-1{
     float: left;
     width: 50%;
@@ -502,7 +506,7 @@ Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
 /*
 Adaptación optimizada para verse en un iPad en posición horizontal.
 */
-@media screen and (max-width: 900px) and (orientation: landscape){
+@media screen and (max-width: 1024px) and (orientation: landscape){ /* Ancho del iPad 1024px */
 
     #contenedor {
         border-color: blueviolet;
@@ -633,7 +637,7 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
 /*
 Adaptación optimizada para verse en un iPad en posición vertical.
 */
-@media screen and (max-height: 900px) and (orientation: portrait){
+@media screen and (max-height: 1024px) and (orientation: portrait){ /* Alto del iPad 1024px */
     
     #contenedor {
         border-color: brown;
@@ -791,7 +795,7 @@ Adaptación optimizada para verse en un iPad en posición vertical.
 /*
 Adaptación optimizada para verse en un iPhone posición vertical.
 */
-@media screen and (max-width: 500px) and (orientation: portrait){    
+@media screen and (max-width: 414px) and (orientation: portrait){ /* Ancho del iPhone 414px */
     
     #contenedor {
         border-color: chartreuse;
@@ -934,7 +938,7 @@ Adaptación optimizada para verse en un iPhone posición vertical.
 /*
 Adaptación optimizada para verse en un iPhone posición horizontal.
 */
-@media screen and (max-height: 500px) and (orientation: landscape){
+@media screen and (max-height: 414px) and (orientation: landscape){ /* Alto del iPhone 414px */
 
     #contenedor {
         border-color: chocolate;
