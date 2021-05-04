@@ -821,10 +821,8 @@ Adaptación optimizada para verse en un iPhone posición vertical.
         */
         position:relative;
         display: block;
-        width: 100%;
+        width: 97%;
         background-color: rgb(156, 176, 230);
-        margin: 3px;
-        border-radius: 1em;
     }
          
     .banner{
