@@ -299,13 +299,10 @@ nav li:hover>ul{
 */
 
 #section-cursos{
-    box-align: left;
+    margin: 2em auto;
     width: 70%;
     float: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
     border-radius: 1em;
-    margin-left: 30px;
     background-color: #CCC;
 }
 article{
@@ -456,9 +453,10 @@ Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
 @media screen and (min-width: 900px) and (max-width: 1300px) and (orientation: landscape){
     
     #section-cursos {
-        width: auto;
+        margin: 2em auto;
+        width: 70%;
+        float: none;
         float:none;
-        box-align: center;
     }
 
     #articulo-1{
@@ -493,9 +491,9 @@ Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho.
     }
 
     #aside-cursos {
-        width: auto;
+        margin: 2em auto;
+        width: 70%;
         float: none;
-        box-align: center;
         text-align: center;
     }            
 }
@@ -520,7 +518,6 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
         margin: 2em auto;
         width: 90%;
         float: none;
-        box-align: center;
         background-color: aquamarine;
     }
 
@@ -580,7 +577,6 @@ Adaptación optimizada para verse en un iPad en posición horizontal.
         margin: 2em auto;
         width: 90%;
         float: none;
-        box-align: center;
         text-align: center;
         background-color: crimson;
         padding: 0px;
@@ -650,9 +646,9 @@ Adaptación optimizada para verse en un iPad en posición vertical.
     }
 
     #section-cursos {
-        width: auto;
+        margin: 2em auto;
+        width: 90%;
         float:none;
-        box-align: center;
         background-color: rgb(20, 220, 30);
     }
 
@@ -696,7 +692,6 @@ Adaptación optimizada para verse en un iPad en posición vertical.
     #aside-cursos {
         width: auto;
         float: none;
-        box-align: center;
         text-align: center;
         background-color: crimson;
 
